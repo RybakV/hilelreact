@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 2</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            color: #abc;
+            background-color: #234;
+        }
+        pre {
+            background-color: #fff2;
+            border: 1px solid #fff3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>ДЗ 2</h1>
+<pre>
+    <code>
+    let calcOperator = prompt('Оберіть операцію: add, sub, mult, div')
+    let operandOne = prompt('Введіть перше число','0')
+    let operandTwo = prompt('Введіть друге число','0')
+    let result = 0
+
+    switch(calcOperator) {
+        case "add":
+            result = Number(operandOne) + Number(operandTwo);
+            alert(operandOne + "+" + operandTwo + "=" + result);
+            break;
+        case "sub":
+            result = Number(operandOne) - Number(operandTwo);
+            alert(operandOne + "-" + operandTwo + "=" + result);
+            break;
+        case "mult":
+            result = Number(operandOne) * Number(operandTwo);
+            alert(operandOne + "*" + operandTwo + "=" + result);
+            break;
+        case "div":
+            result = Number(operandOne) / Number(operandTwo);
+            alert(operandOne + "/" + operandTwo + "=" + result);
+            break;
+        default:
+            alert("Перевірте корректність введених даних");
+    }
+
+    </code>
+</pre>
+<script src="./script.js"></script>
+</body>
+</html>
