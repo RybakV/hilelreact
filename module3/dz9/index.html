@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 9</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            color: #abc;
+            background-color: #234;
+        }
+        pre {
+            background-color: #fff2;
+            border: 1px solid #fff3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>ДЗ 9</h1>
+
+<div id="results"></div>
+<pre>
+    <code>
+    const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    let keyArray = [];
+
+    function getRandomArbitrary(min, max) {
+       return Math.random() * (max - min) + min;
+    }
+
+    function generateKey(keyLength, symbolsSet){
+       charactersArray = symbolsSet.split('');
+       let i = 0;
+       while(i < keyLength){
+          let randomNumber = Math.floor(getRandomArbitrary(1, charactersArray.length));
+          keyArray.push(charactersArray[randomNumber]);
+          i++;
+       }
+       let keyString = keyArray.join('');
+       return keyString;
+    }
+
+    const key = generateKey(16, characters);
+    console.log(key);
+    </code>
+</pre>
+<script src="./script.js"></script>
+</body>
+</html>
