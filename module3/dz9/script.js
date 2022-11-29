@@ -13,8 +13,7 @@ function generateKey(keyLength, symbolsSet){
         keyArray.push(charactersArray[randomNumber]);
         i++;
     }
-    let keyString = keyArray.join('');
-    return keyString;
+    return keyArray.join('');
 }
 
 const key = generateKey(16, characters);
