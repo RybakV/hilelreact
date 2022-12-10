@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 6</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            color: #abc;
+            background-color: #234;
+        }
+        pre {
+            background-color: #fff2;
+            border: 1px solid #fff3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>ДЗ 6</h1>
+<pre>
+    <code>
+    let ladder = {
+        step: 0,
+        up: function () {
+            this.step++;
+            console.log('+ 1 shodynka = ' + this.step);
+            return this;
+        },
+        down: function () {
+            this.step--;
+            console.log('- 1 shodynka =  ' + this.step);
+            return this;
+        },
+        showStep: function () { // показывает текущую ступеньку
+            console.log('shodynka result ' + this.step);
+        }
+    };
+
+
+    ladder.up().up().up().down().up().showStep();
+    </code>
+</pre>
+<script src="./script.js"></script>
+</body>
+</html>
