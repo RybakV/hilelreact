@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 12</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            color: #abc;
+            background-color: #234;
+            text-align: center;
+        }
+        pre {
+            background-color: #fff2;
+            border: 1px solid #fff3;
+            border-radius: 4px;
+            text-align: left;
+        }
+        a {
+            font-family: Arial, sans-serif;
+            color: #556;
+            display: inline-block;
+            padding: 4px 15px;
+            background-color: #aab;
+            margin: 5px;
+            border-radius: 30px;
+            position: relative;
+        }
+        a i {
+            position: absolute;
+            background: #922;
+            color: #edd;
+            display: inline-block;
+            padding: 1px 5px;
+            border-radius: 30px;
+            top: -5px;
+            left: 90%;
+            white-space: nowrap;
+        }
+        a i.ok {
+            background: #292;
+            color: #ded;
+        }
+    </style>
+</head>
+<body>
+<h1>ДЗ 12</h1>
+<a href="https://www.google.com/">https link</a>
+<br/>
+<a href="http://www.poogle.com/">http link</a>
+<br/>
+<a href="www.qoogle.com/">www link</a>
+
+<pre>
+    <code>
+    document.querySelectorAll('a').forEach(function callback(element) {
+
+        href = element.getAttribute('href');
+        console.log(element);
+
+        if (href.startsWith('https://')) {
+            element.innerHTML += "<i class='ok'>Link is ok</i>";
+        }
+        else if (href.startsWith('http://')) {
+            element.innerHTML += "<i>Link is not safe</i>";
+        }
+        else {
+            element.innerHTML += "<i>Link had no protocol. Added http.</i>";
+            element.setAttribute('href', 'https://www.' + href.split('www.')[1]);
+        }
+
+        return element;
+    });
+    </code>
+</pre>
+
+<script src="./script.js"></script>
+</body>
+</html>
