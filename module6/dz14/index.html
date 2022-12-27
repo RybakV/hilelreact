@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 14</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>ДЗ 14</h1>
+<form class="form" id="form">
+    <h3>Ім'я</h3>
+    <input type="text" name="firstname" id="firstname" placeholder="Ім'я"/>
+    <h3>Прізвище</h3>
+    <input type="text" name="lastname" id="lastname" placeholder="Прізвище"/>
+    <h3>Дата народження</h3>
+    <input type="text" name="birthdate" id="birthdate" placeholder="Дата народження"/>
+    <h3>Стать</h3>
+    <fieldset>
+        <input name="sex" id="sex-male" type="radio" value="Чоловік"/>
+        <label for="sex-male">Чоловік</label>
+        <input name="sex" id="sex-female" type="radio" value="Жінка"/>
+        <label for="sex-female">Жінка</label>
+    </fieldset>
+    <h3 for="city">Місто</h3>
+    <select name="city" id="city">
+        <option>Місто не обрано</option>
+        <option>Київ</option>
+        <option>Дніпро</option>
+        <option>Львів</option>
+        <option>Харків</option>
+    </select>
+    <h3 >Адреса</h3>
+    <textarea name="address" placeholder="Адреса" rows="2"></textarea>
+    <h3 for="address">Володіння мовами</h3>
+    <fieldset>
+        <input name="language-ua" id="language-ua" type="checkbox" value="Українська"/>
+        <label for="language-ua">Українська</label>
+    </fieldset>
+    <fieldset>
+        <input name="language-en" id="language-en" type="checkbox" value="Англійська"/>
+        <label for="language-en">Англійська</label>
+    </fieldset>
+    <fieldset>
+        <input name="language-de" id="language-de" type="checkbox" value="Німецька"/>
+        <label for="language-de">Німецька</label>
+    </fieldset>
+    <button type="submit" id="submit" class="btn">Зберегти</button>
+</form>
+<div id="result-box">
+    <h3>Result</h3>
+    <table id="result"></table>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

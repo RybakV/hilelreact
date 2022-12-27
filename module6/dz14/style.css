@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+}
+body {
+    background-color: #34405c;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+}
+.form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 40px 40px;
+    background-color: #5c6681;
+    margin: 24px auto;
+    color: #fff;
+}
+h3 {
+    margin: 12px 0 4px;
+}
+fieldset {
+    display: block;
+    border: none;
+    margin: 0 0 12px;
+    padding: 0;
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    color: #000;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+label {
+    margin-right: 12px;
+}
+fieldset input {
+    width: 28px;
+    height: 28px;
+    margin: 0 6px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn {
+    display: block;
+    background-color: #e59e00;
+    border: none;
+    text-align: center;
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fffbef;
+}
+#result-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 38px;
+    border: 2px solid #5c6681;
+    background-color: #5c6681;
+    color: #fff;
+    margin: 0 auto 50px;
+    display: none;
+}
+#result {
+    width: 100%;
+    border-collapse: collapse;
+}
+#result td {
+    border: 2px solid #fff3;
+    padding: 4px 12px;
+}

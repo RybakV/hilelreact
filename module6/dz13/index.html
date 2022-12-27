@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>ДЗ 12</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>ДЗ 13</h1>
+<div class="product">
+    <div class="left">
+        <img src="./product.png" alt="product photo"/>
+    </div>
+    <div class="right">
+        <div>
+            <div class="header">Oil Lantern</div>
+            <div class="description">Nice lantern if you need a light source</div>
+            <div class="price">$25</div>
+        </div>
+        <a href="#" id="buy" class="btn">Buy</a>
+    </div>
+</div>
+<form class="form" id="form">
+    <div id="error-message"></div>
+    <input type="text" name="name" id="name" placeholder="*Your Full Name"/>
+    <select name="city">
+        <option>Kyiv</option>
+        <option>Dnipro</option>
+        <option>Lviv</option>
+    </select>
+    <select name="post">
+        <option>#1 street 12</option>
+        <option>#2 square 23</option>
+        <option>#3 avenue 34</option>
+    </select>
+    <fieldset>
+        <input name="pay" id="pay-card" type="radio"/>
+        <label for="pay-card">Pay by card</label>
+    </fieldset>
+    <fieldset>
+        <input name="pay" id="pay-cash" type="radio"/>
+        <label for="pay-cash">Pay by cash</label>
+    </fieldset>
+    <input name="quantity" type="number" id="quantity" placeholder="*Quantity"/>
+    <textarea name="comment" placeholder="Your comment" rows="3"></textarea>
+    <button id="submit" class="btn">Submit</button>
+</form>
+<div id="checkout">
+    <h3>Checkout</h3>
+    <div id="checkout-comment"></div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

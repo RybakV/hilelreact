@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+}
+body {
+    background-color: #34405c;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+}
+.product {
+    width: 500px;
+    height: 280px;
+    padding: 40px;
+    background-color: #878ea7;
+    margin: 24px auto;
+    display: flex;
+    color: #fff;
+}
+.left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    color: #aaa;
+    max-width: 100%;
+}
+.right {
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 50%;
+    padding-left: 20px;
+}
+.header {
+    font-size: 28px;
+}
+.description {
+    margin: 12px 0 4px;
+}
+.price {
+    font-size: 32px;
+}
+.btn {
+    display: block;
+    background-color: #e59e00;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fffbef;
+}
+.form {
+    width: 500px;
+    padding: 38px;
+    border: 2px solid #5c6681;
+    background-color: #5c6681;
+    margin: 0 auto 24px;
+    display: none;
+    color: #fff;
+}
+input.error {
+    border: 1px solid red !important;
+}
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    color: #000;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    margin: 0 0 16px;
+}
+fieldset input {
+    width: 20px;
+    height: 20px;
+    margin: 0 12px 0 0;
+}
+::placeholder {
+    color: #777;
+}
+.form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+#error-message {
+    display: none;
+    color: #fdd;
+    margin-bottom: 12px;
+    background: #f44;
+    padding: 6px 12px;
+}
+#checkout {
+    width: 500px;
+    padding: 38px;
+    border: 2px solid #5c6681;
+    background-color: #5c6681;
+    color: #fff;
+    margin: 0 auto 50px;
+    display: none;
+}
+h3 {
+    margin: 0 0 8px;
+}
