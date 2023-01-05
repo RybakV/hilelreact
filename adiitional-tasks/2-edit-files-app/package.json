@@ -1,0 +1,16 @@
+{
+  "name": "2-edit-files-app",
+  "version": "1.0.0",
+  "description": "Edit simple files content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "app",
+    "study"
+  ],
+  "author": "RybakV",
+  "license": "ISC"
+}
