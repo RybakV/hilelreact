@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #322f2b;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+form {
+    padding: 20px;
+    background-color: #6d6674;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+input {
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    border-radius: 7px;
+    background-color: #e9e7eb;
+}
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #917366;
+    color: #e9e7eb;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#post, #comments {
+    background-color: #7c6155;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 20px;
+}
+#comments {
+    margin-left: 40px;
+}
+#post h2, #comments h4 {
+    padding: 20px 20px 12px;
+    text-transform: capitalize;
+}
+#post h2::before, #comments h4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -9px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #7c6155;
+    transform: rotate(45deg);
+}
+#post p, #comments p {
+    padding: 0 20px 20px;
+}
+#post p:first-letter, #comments:first-letter {
+    text-transform: uppercase;
+}
+#error {
+    background-color: #fdb9c2;
+    color: #b31e40;
+    border-radius: 12px;
+}
+#error p {
+    padding: 20px;
+}
