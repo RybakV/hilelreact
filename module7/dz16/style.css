@@ -16,11 +16,17 @@ body {
 #weather {
     padding: 20px;
     background-color: #95a5e9;
-    color: #4e42b1;
+    color: #fff;
     margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 10px 43px #3b4a81;
 }
-p {
-    margin: 6px 0;
+#weather h3 {
+    color: #fff;
+    font-size: 32px;
+}
+h4 {
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
 }
